@@ -6,7 +6,7 @@ import {
     type CreationOptional
 } from "sequelize";
 
-import { sequelize } from "../config/database.js";
+import { sequelize } from "../config/database";
 
 export enum Role {
     ADMIN = "ADMIN",

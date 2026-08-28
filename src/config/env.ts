@@ -6,7 +6,7 @@ const required = ["DB_HOST", "DB_PORT", "DB_NAME", "DB_USER", "DB_PASSWORD", "JW
 
 for (const key of required) {
     if (!process.env[key]) {
-        throw new Error(Missing environment variable: ${ key });
+        throw new Error(`Missing environment variable: ${key}`);
     }
 }
 

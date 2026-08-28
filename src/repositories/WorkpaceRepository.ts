@@ -1,4 +1,4 @@
-import { User } from "../models/User.js";
+import { User } from "../models/User";
 
 export class UserRepository {
     create(data: { name: string; email: string; password: string; role: User["role"] }) {
